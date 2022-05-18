@@ -52,16 +52,7 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
 
   -- GitSigns
-  use {
-    'lewis6991/gitsigns.nvim',
-    -- tag = 'release' -- To use the latest release
-  }
-
-  -- Tabs
-  use  {
-    'romgrk/barbar.nvim',
-    requires = {'kyazdani42/nvim-web-devicons'}
-  }
+  use "lewis6991/gitsigns.nvim"
 
   -- Colorschemes
   use "lunarvim/onedarker.nvim"
@@ -94,11 +85,9 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-media-files.nvim"
 
-  use {
-    "akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
-      require("toggleterm").setup()
-    end
-  }
+  use "akinsho/toggleterm.nvim"
+  use "akinsho/bufferline.nvim"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
