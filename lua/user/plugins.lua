@@ -50,6 +50,8 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-tree.lua"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
+  use "goolord/alpha-nvim"
+  use "ahmedkhalf/project.nvim"
 
   -- GitSigns
   use "lewis6991/gitsigns.nvim"
@@ -77,6 +79,7 @@ return packer.startup(function(use)
   use "williamboman/nvim-lsp-installer"
   use "tamago324/nlsp-settings.nvim" -- language server settings in json
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+  use "HallerPatrick/py_lsp.nvim"
 
   -- TreeSitter
   use "nvim-treesitter/nvim-treesitter"
