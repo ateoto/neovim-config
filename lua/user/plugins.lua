@@ -81,6 +81,9 @@ return packer.startup(function(use)
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use "HallerPatrick/py_lsp.nvim"
 
+  -- Comment 
+  use "numToStr/Comment.nvim"
+
   -- TreeSitter
   use "nvim-treesitter/nvim-treesitter"
 
