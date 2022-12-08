@@ -76,10 +76,11 @@ return packer.startup(function(use)
 
   -- LSP
   use "neovim/nvim-lspconfig" --enable LSP
-  use "williamboman/nvim-lsp-installer"
-  use "tamago324/nlsp-settings.nvim" -- language server settings in json
+  use "williamboman/mason.nvim" -- https://github.com/williamboman/mason.nvim
+  use "williamboman/mason-lspconfig.nvim"
+  --use "tamago324/nlsp-settings.nvim" -- language server settings in json
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
-  use "HallerPatrick/py_lsp.nvim"
+  --use "HallerPatrick/py_lsp.nvim"
 
   -- TreeSitter
   use "nvim-treesitter/nvim-treesitter"
@@ -88,8 +89,8 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-media-files.nvim"
 
-  use "akinsho/toggleterm.nvim"
-  use "akinsho/bufferline.nvim"
+  use {"akinsho/toggleterm.nvim", tag="*"}
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
